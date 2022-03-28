@@ -33,7 +33,7 @@ public class MainController {
         return projectService.sortByStart();
     }
 
-    //Adding new project
+    //Adding project
     @PostMapping(value = "/project")
     public String addProject(@RequestBody Project project){
         projectService.create(project);
